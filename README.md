@@ -24,3 +24,9 @@ Notas importantes
 - El login de ejemplo usa las credenciales por defecto en la UI (`carlospea13+1@gmail.com` / `123456`). Puedes cambiarlas en `src/pages/Login.jsx`.
 
 - La pantalla `Devices` realiza peticiones con el token: revisa la consola y network si hay errores de CORS o permisos contra la API `api.qa.myintelli.net`.
+
+- Observaciones: en el menu debido al que algunos de los objetos de las opciones no tienen el icono de font awesome no se podran visualizar ya que usan una ruta en svg.
+
+- Valide segun el render si la opcion sera visible o no.
+
+- Otra cosa que he experimentado es que a veces debido al servidor api no podia acceder ya que el usuario estaba bloqueado.
