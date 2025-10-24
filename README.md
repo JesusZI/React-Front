@@ -2,6 +2,8 @@
 
 Este repositorio contiene una aplicación React (Vite) de ejemplo con: login contra un API, manejo de token en Redux, rutas protegidas, pantalla de `Devices` y una lista externa pública con modal de detalle.
 
+
+
 Características principales
 - Login: POST https://api.qa.myintelli.net/v1/login (body JSON). El token devuelto se guarda en Redux.
 - Devices: GET https://api.qa.myintelli.net/v1/devices con `limit`, `offset` y `search`. Autenticación Bearer Token.
@@ -9,10 +11,12 @@ Características principales
 
 Estructura mínima
 - `src/pages` — páginas: `Login`, `Welcome`, `Devices`, `External`.
-- `src/components/Layout.jsx` — AppBar y navegación según `modules` del login.
+- `src/components/Layout` — AppBar y navegación según `modules` del login.
 - `src/store` — Redux store y `authSlice` para token/modules.
 
 Instalación (PowerShell)
+
+Instalar Node
 
 ```powershell
 cd 'C:\Users\Tony\Desktop\Proyecto React'
