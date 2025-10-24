@@ -19,7 +19,7 @@ Instalación (PowerShell)
 Instalar Node
 
 ```powershell
-cd 'C:\Users\Tony\Desktop\Proyecto React'
+cd 'React-Front'
 npm install
 npm run dev
 ```
