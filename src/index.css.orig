@@ -1,0 +1,79 @@
+/*
+  Original CSS backed up by the assistant on 2025-10-23.
+  This file contains the previous contents of `src/index.css` and is kept
+  as a reference (do not delete). The active `src/index.css` was reduced to
+  avoid conflicts with the template styles in `assets/`.
+*/
+
+:root{
+	--bg:#f3f7fb;
+	--card:#ffffff;
+	--primary:#0b74ff;
+	--secondary:#00d4c4;
+	--muted:#556074;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%;}
+body{
+	font-family: Roboto, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	background: linear-gradient(180deg,var(--bg), #eef2f6 60%);
+	color: rgba(0,0,0,0.87);
+	-webkit-font-smoothing:antialiased;
+}
+
+.app-container{
+	min-height:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+.main-content{
+	flex:1 1 auto;
+	padding:24px;
+	max-width:1200px;
+	margin: 0 auto;
+}
+
+/* Sneat-like layout utilities */
+.layout-wrapper{min-height:100%;display:flex;flex-direction:column}
+.layout-container{display:flex;flex:1 1 auto}
+.layout-page{flex:1 1 auto;display:flex;flex-direction:column}
+.content-wrapper{flex:1 1 auto}
+
+.center-box{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.card{
+	background:var(--card);
+	border-radius:8px;
+	box-shadow: 0 8px 28px rgba(11,24,54,0.08);
+	transition: box-shadow .18s ease, transform .18s ease;
+}
+
+.card:hover{
+	/* Evitar desplazamiento brusco: sólo aumentar sombra para dar sensación de elevación */
+	transform: none;
+	box-shadow: 0 14px 48px rgba(11,24,54,0.12);
+}
+
+.chip-hover:hover{opacity:0.95; transition: box-shadow .12s ease, opacity .12s ease}
+
+/* Botón principal sin movimiento al hover */
+.btn-stable{
+    transition: box-shadow .14s ease, transform .14s ease, background-color .12s ease;
+}
+.btn-stable:hover{
+    transform: none; /* anular cualquier translate */
+    box-shadow: 0 6px 18px rgba(11,24,54,0.08);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body{font-family: 'Inter', Roboto, Arial, sans-serif}
+
